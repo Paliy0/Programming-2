@@ -1,0 +1,9 @@
+C:\Users\pablo\Documents\Programming 2\Week-5\CandyCrushLogic\obj\Debug\netcoreapp3.1\CandyCrushLogic.AssemblyInfoInputs.cache
+C:\Users\pablo\Documents\Programming 2\Week-5\CandyCrushLogic\obj\Debug\netcoreapp3.1\CandyCrushLogic.AssemblyInfo.cs
+C:\Users\pablo\Documents\Programming 2\Week-5\CandyCrushLogic\obj\Debug\netcoreapp3.1\CandyCrushLogic.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Documents\Programming 2\Week-5\CandyCrushLogic\bin\Debug\netcoreapp3.1\CandyCrushLogic.deps.json
+C:\Users\pablo\Documents\Programming 2\Week-5\CandyCrushLogic\bin\Debug\netcoreapp3.1\CandyCrushLogic.dll
+C:\Users\pablo\Documents\Programming 2\Week-5\CandyCrushLogic\bin\Debug\netcoreapp3.1\CandyCrushLogic.pdb
+C:\Users\pablo\Documents\Programming 2\Week-5\CandyCrushLogic\obj\Debug\netcoreapp3.1\CandyCrushLogic.dll
+C:\Users\pablo\Documents\Programming 2\Week-5\CandyCrushLogic\obj\Debug\netcoreapp3.1\CandyCrushLogic.pdb
+C:\Users\pablo\Documents\Programming 2\Week-5\CandyCrushLogic\obj\Debug\netcoreapp3.1\CandyCrushLogic.csprojAssemblyReference.cache

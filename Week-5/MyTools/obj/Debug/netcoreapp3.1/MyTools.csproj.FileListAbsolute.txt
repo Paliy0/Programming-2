@@ -1,0 +1,9 @@
+C:\Users\pablo\Documents\Programming 2\Week-5\MyTools\bin\Debug\netcoreapp3.1\MyTools.deps.json
+C:\Users\pablo\Documents\Programming 2\Week-5\MyTools\bin\Debug\netcoreapp3.1\MyTools.dll
+C:\Users\pablo\Documents\Programming 2\Week-5\MyTools\bin\Debug\netcoreapp3.1\MyTools.pdb
+C:\Users\pablo\Documents\Programming 2\Week-5\MyTools\obj\Debug\netcoreapp3.1\MyTools.csprojAssemblyReference.cache
+C:\Users\pablo\Documents\Programming 2\Week-5\MyTools\obj\Debug\netcoreapp3.1\MyTools.AssemblyInfoInputs.cache
+C:\Users\pablo\Documents\Programming 2\Week-5\MyTools\obj\Debug\netcoreapp3.1\MyTools.AssemblyInfo.cs
+C:\Users\pablo\Documents\Programming 2\Week-5\MyTools\obj\Debug\netcoreapp3.1\MyTools.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Documents\Programming 2\Week-5\MyTools\obj\Debug\netcoreapp3.1\MyTools.dll
+C:\Users\pablo\Documents\Programming 2\Week-5\MyTools\obj\Debug\netcoreapp3.1\MyTools.pdb
