@@ -14,13 +14,15 @@ namespace assignment2
         void Start()
         {
             HangmanGame hangman = new HangmanGame();
-            hangman.Init("backdoor");
+
+            hangman.secretWord = SelectWord(ListOfWords());
+
+            hangman.Init(hangman.secretWord);
+
             Console.WriteLine("The secret word is: " + hangman.secretWord);
             Console.WriteLine("The guessed word is: " + hangman.guessedWord);
 
-            SelectWord(ListOfWords());
-
-            
+            PlayHangman(hangman);
         }
 
         List<string> ListOfWords()
@@ -55,6 +57,54 @@ namespace assignment2
         {
             Random rnd = new Random();
 
+            int index = rnd.Next(words.Count);
+            string selectedWord = words[index];
+
+
+            return selectedWord;
+        }
+
+        bool PlayHangman(HangmanGame hangman)
+        {
+            List<char> enteredLetters = new List<char>();
+
+            enteredLetters.Add('a');
+            enteredLetters.Add('b');
+
+            DisplayWord(hangman.guessedWord);
+            DisplayLetters(enteredLetters);
+
+            return true;
+        }
+
+        void DisplayWord(string word)
+        {
+            string temp = "";
+            foreach (char c in word)
+            {
+                temp += c + " ";
+            }
+            Console.WriteLine(temp);
+        }
+
+        void DisplayLetters(List<char> letters)
+        {
+            Console.Write("Entered letters: ");
+            foreach (char c in letters)
+            {
+                Console.Write(c + " ");
+            }
+        }
+        char ReadLetter(List<char> blacklistLetters)
+        {
+            char newLetter;
+
+            do
+            {
+                newLetter = Console.ReadLine()[0];
+            } while (blacklistLetters.Contains(newLetter));
+
+            return newLetter;
         }
     }
 
@@ -68,7 +118,7 @@ namespace assignment2
             guessedWord = "";
             foreach (char c in secretWord)
             {
-                guessedWord += ". ";
+                guessedWord += ".";
             }
         }
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pablo\\Documents\\Programming 2\\Week-3\\assignment2\\assignment2.csproj": {}
+    "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-3\\assignment2\\assignment2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pablo\\Documents\\Programming 2\\Week-3\\assignment2\\assignment2.csproj": {
+    "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-3\\assignment2\\assignment2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-3\\assignment2\\assignment2.csproj",
+        "projectUniqueName": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-3\\assignment2\\assignment2.csproj",
         "projectName": "assignment2",
-        "projectPath": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-3\\assignment2\\assignment2.csproj",
+        "projectPath": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-3\\assignment2\\assignment2.csproj",
         "packagesPath": "C:\\Users\\pablo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-3\\assignment2\\obj\\",
+        "outputPath": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-3\\assignment2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

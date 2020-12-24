@@ -26,21 +26,35 @@ namespace assignment1
         {
             List<Course> gradeList = new List<Course>();
 
-            gradeList.Add(ReadCourse("Enter a course."));
+            for (int i = 0; i < 3; i++)
+            {
+                ReadCourse("Enter a course.");
+                gradeList.Add(new Course());
+            }
+            DisplayGradeList(gradeList);
+
+            
 
 
         }
 
         int ReadInt(string question)
         {
-            question = Console.ReadLine();
+            Console.Write(question);
 
             return int.Parse(question);
         }
 
+        string ReadString(string question)
+        {
+            Console.Write(question);
+
+            return question;
+        }
+
         void DisplayGradeList(List<Course> gradeList)
         {
-
+            
         }
 
         PracticalGrade ReadPracticalGrade(string question)
@@ -69,7 +83,7 @@ namespace assignment1
 
         void DisplayPracticalGrade(PracticalGrade practical)
         {
-
+            Console.WriteLine("Practical Grade for {0}", practical);
         }
 
         Course ReadCourse(string question)
@@ -77,15 +91,12 @@ namespace assignment1
             Console.WriteLine(question);
             Course course1 = new Course();
 
-            Console.Write("Name of the course: ");
-            course1.name = Console.ReadLine();
+            course1.name = ReadString("Name of the course: ");
 
-            Console.Write("Grade for {0}: ", course1.name);
-            course1.grade = int.Parse(Console.ReadLine());
+            course1.grade = ReadInt($"Grade for {course1.name}");
 
             Console.WriteLine("0. None 1. Absent 2. Insufficient 3. Sufficient 4. Good");
-            Console.Write("Practical grade for {0}: ", course1.name);
-            course1.practical = int.Parse(Console.ReadLine());
+            ReadPracticalGrade($"Practical grade for {course1.name}");
 
             return course1;
         }
