@@ -19,10 +19,14 @@ namespace assignment2
 
             hangman.Init(hangman.secretWord);
 
-            Console.WriteLine("The secret word is: " + hangman.secretWord);
-            Console.WriteLine("The guessed word is: " + hangman.guessedWord);
-
-            PlayHangman(hangman);
+            if (PlayHangman(hangman) == true)
+            {
+                Console.WriteLine("You guessed the word!");
+            }
+            else
+            {
+                Console.WriteLine("Too bad, you did not guess the word ({0})", hangman.secretWord);
+            }
         }
 
         List<string> ListOfWords()
@@ -67,24 +71,31 @@ namespace assignment2
         bool PlayHangman(HangmanGame hangman)
         {
             List<char> enteredLetters = new List<char>();
+            int attempts = 8;
 
-            enteredLetters.Add('a');
-            enteredLetters.Add('b');
+            do
+            {
+                DisplayWord(hangman.guessedWord);
 
-            DisplayWord(hangman.guessedWord);
-            DisplayLetters(enteredLetters);
+                hangman.ProcessLetter(ReadLetter(enteredLetters));
+
+                DisplayLetters(enteredLetters);
+
+                attempts--;
+                Console.WriteLine("Attempts left: {0}", attempts);
+
+            } while (attempts != 0 && hangman.IsGuessed() != true);
 
             return true;
         }
 
         void DisplayWord(string word)
         {
-            string temp = "";
             foreach (char c in word)
             {
-                temp += c + " ";
+                Console.Write(c + " ");
             }
-            Console.WriteLine(temp);
+            Console.WriteLine();
         }
 
         void DisplayLetters(List<char> letters)
@@ -101,7 +112,9 @@ namespace assignment2
 
             do
             {
+                Console.Write("Enter a letter: ");
                 newLetter = Console.ReadLine()[0];
+
             } while (blacklistLetters.Contains(newLetter));
 
             return newLetter;
@@ -120,6 +133,35 @@ namespace assignment2
             {
                 guessedWord += ".";
             }
+        }
+
+        public bool ContainsLetter(char letter)
+        {
+            bool contains = false;
+
+            if (secretWord.Contains(letter))
+            {
+                contains = true;
+            }
+            return contains;
+        }
+        
+        public bool ProcessLetter(char letter)
+        {
+            int index = secretWord.IndexOf(letter);
+
+            guessedWord = guessedWord.Remove(index, 1).Insert(index, letter.ToString());
+
+            return false;
+        }
+
+        public bool IsGuessed()
+        {
+            if (guessedWord == secretWord)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
