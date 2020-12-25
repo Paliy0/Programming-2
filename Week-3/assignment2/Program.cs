@@ -16,6 +16,7 @@ namespace assignment2
             HangmanGame hangman = new HangmanGame();
 
             hangman.secretWord = SelectWord(ListOfWords());
+            Console.WriteLine(hangman.secretWord);
 
             hangman.Init(hangman.secretWord);
 
@@ -150,9 +151,20 @@ namespace assignment2
         {
             int index = secretWord.IndexOf(letter);
 
-            guessedWord = guessedWord.Remove(index, 1).Insert(index, letter.ToString());
+            if (index == -1) return false;
 
-            return false;
+            char[] chars = guessedWord.ToCharArray();  
+
+            do
+            {
+                chars[index] = letter;
+
+                index = secretWord.IndexOf(letter, index + 1);
+
+
+            } while (index != -1);
+            guessedWord = new string(chars);
+            return true;
         }
 
         public bool IsGuessed()
