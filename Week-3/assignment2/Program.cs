@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 
 namespace assignment2
@@ -16,12 +17,13 @@ namespace assignment2
             HangmanGame hangman = new HangmanGame();
 
             hangman.secretWord = SelectWord(ListOfWords());
-            Console.WriteLine(hangman.secretWord);
+            //Console.WriteLine(hangman.secretWord);
 
             hangman.Init(hangman.secretWord);
 
             if (PlayHangman(hangman) == true)
             {
+                Console.WriteLine(hangman.guessedWord);
                 Console.WriteLine("You guessed the word!");
             }
             else
@@ -78,16 +80,27 @@ namespace assignment2
             {
                 DisplayWord(hangman.guessedWord);
 
-                hangman.ProcessLetter(ReadLetter(enteredLetters));
+                Console.WriteLine();
+
+                char letter = ReadLetter(enteredLetters);
+                enteredLetters.Add(letter);
+
+                if (!hangman.ProcessLetter(letter))
+                {
+                    attempts--;
+                }
+                
 
                 DisplayLetters(enteredLetters);
-
-                attempts--;
                 Console.WriteLine("Attempts left: {0}", attempts);
 
-            } while (attempts != 0 && hangman.IsGuessed() != true);
+                Console.WriteLine();
 
-            return true;
+            } while (attempts != 0 && !hangman.IsGuessed());
+
+            if (hangman.IsGuessed()) return true;
+
+            return false;
         }
 
         void DisplayWord(string word)
@@ -106,6 +119,7 @@ namespace assignment2
             {
                 Console.Write(c + " ");
             }
+            Console.WriteLine();
         }
         char ReadLetter(List<char> blacklistLetters)
         {
@@ -138,31 +152,23 @@ namespace assignment2
 
         public bool ContainsLetter(char letter)
         {
-            bool contains = false;
-
-            if (secretWord.Contains(letter))
-            {
-                contains = true;
-            }
-            return contains;
+            return secretWord.IndexOf(letter) != -1;
         }
         
         public bool ProcessLetter(char letter)
         {
-            int index = secretWord.IndexOf(letter);
+            if (!ContainsLetter(letter)) return false;
 
-            if (index == -1) return false;
+            int index = -1;
+            char[] chars = guessedWord.ToCharArray();
 
-            char[] chars = guessedWord.ToCharArray();  
-
-            do
+            while (true)
             {
-                chars[index] = letter;
-
                 index = secretWord.IndexOf(letter, index + 1);
-
-
-            } while (index != -1);
+                if (index == -1) break;
+                
+                chars[index] = letter;
+            } 
             guessedWord = new string(chars);
             return true;
         }
