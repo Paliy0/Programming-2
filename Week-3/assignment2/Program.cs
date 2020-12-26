@@ -17,7 +17,7 @@ namespace assignment2
             HangmanGame hangman = new HangmanGame();
 
             hangman.secretWord = SelectWord(ListOfWords());
-            //Console.WriteLine(hangman.secretWord);
+            Console.WriteLine(hangman.secretWord);
 
             hangman.Init(hangman.secretWord);
 
@@ -34,28 +34,29 @@ namespace assignment2
 
         List<string> ListOfWords()
         {
-            List<string> words = new List<string>();
-
-            words.Add("airplane");
-            words.Add("kitchen");
-            words.Add("building");
-            words.Add("incredible");
-            words.Add("funny");
-            words.Add("trainstation");
-            words.Add("neighbour");
-            words.Add("different");
-            words.Add("department");
-            words.Add("planet");
-            words.Add("presentation");
-            words.Add("embarrassment");
-            words.Add("integration"); 
-            words.Add("scenario");
-            words.Add("discount");
-            words.Add("management");
-            words.Add("understanding");
-            words.Add("registration");
-            words.Add("security");
-            words.Add("language");
+            List<string> words = new List<string>()
+            {
+                "airplane",
+                "kitchen",
+                "building",
+                "incredible",
+                "funny",
+                "trainstation",
+                "neighbour",
+                "different",
+                "department",
+                "planet",
+                "presentation",
+                "embarrassment",
+                "integration",
+                "scenario",
+                "discount",
+                "management",
+                "understanding",
+                "registration",
+                "security",
+                "language"
+            };
 
             return words;
         }
@@ -66,7 +67,6 @@ namespace assignment2
 
             int index = rnd.Next(words.Count);
             string selectedWord = words[index];
-
 
             return selectedWord;
         }
