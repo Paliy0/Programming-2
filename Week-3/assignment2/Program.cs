@@ -17,7 +17,7 @@ namespace assignment2
             HangmanGame hangman = new HangmanGame();
 
             hangman.secretWord = SelectWord(ListOfWords());
-            Console.WriteLine(hangman.secretWord);
+            //Console.WriteLine(hangman.secretWord);
 
             hangman.Init(hangman.secretWord);
 
@@ -115,11 +115,7 @@ namespace assignment2
         void DisplayLetters(List<char> letters)
         {
             Console.Write("Entered letters: ");
-            foreach (char c in letters)
-            {
-                Console.Write(c + " ");
-            }
-            Console.WriteLine();
+            DisplayWord(new string(letters.ToArray()));
         }
         char ReadLetter(List<char> blacklistLetters)
         {
@@ -144,7 +140,7 @@ namespace assignment2
         public void Init(string secretWord)
         {
             guessedWord = "";
-            foreach (char c in secretWord)
+            for (int i = 0; i < secretWord.Length; i++)
             {
                 guessedWord += ".";
             }
@@ -175,11 +171,7 @@ namespace assignment2
 
         public bool IsGuessed()
         {
-            if (guessedWord == secretWord)
-            {
-                return true;
-            }
-            return false;
+            return guessedWord == secretWord;
         }
     }
 }
