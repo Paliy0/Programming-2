@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\assignment2\\assignment2.csproj",
+      "projectUniqueName": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\assignment2\\assignment2.csproj",
       "projectName": "assignment2",
-      "projectPath": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\assignment2\\assignment2.csproj",
+      "projectPath": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\assignment2\\assignment2.csproj",
       "packagesPath": "C:\\Users\\pablo\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\assignment2\\obj\\",
+      "outputPath": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\assignment2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\CandyCrushLogic\\CandyCrushLogic.csproj": {
-              "projectPath": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\CandyCrushLogic\\CandyCrushLogic.csproj"
+            "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\CandyCrushLogic\\CandyCrushLogic.csproj": {
+              "projectPath": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\CandyCrushLogic\\CandyCrushLogic.csproj"
             }
           }
         }
@@ -83,7 +83,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

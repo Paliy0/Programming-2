@@ -24,6 +24,7 @@ namespace assignment1
             string word = Console.ReadLine();
 
             int NrOfLines = SearchWordInFile(filename, word);
+            Console.WriteLine();
             Console.WriteLine("Number of lines containing the word: {0}", NrOfLines);
         }
 

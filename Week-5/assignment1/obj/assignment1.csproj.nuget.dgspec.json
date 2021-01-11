@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\assignment1\\assignment1.csproj": {}
+    "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\assignment1\\assignment1.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\assignment1\\assignment1.csproj": {
+    "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\assignment1\\assignment1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\assignment1\\assignment1.csproj",
+        "projectUniqueName": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\assignment1\\assignment1.csproj",
         "projectName": "assignment1",
-        "projectPath": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\assignment1\\assignment1.csproj",
+        "projectPath": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\assignment1\\assignment1.csproj",
         "packagesPath": "C:\\Users\\pablo\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\assignment1\\obj\\",
+        "outputPath": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\assignment1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\MyTools\\MyTools.csproj": {
-                "projectPath": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\MyTools\\MyTools.csproj"
+              "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\MyTools\\MyTools.csproj": {
+                "projectPath": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\MyTools\\MyTools.csproj"
               }
             }
           }
@@ -58,18 +58,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\MyTools\\MyTools.csproj": {
+    "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\MyTools\\MyTools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\MyTools\\MyTools.csproj",
+        "projectUniqueName": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\MyTools\\MyTools.csproj",
         "projectName": "MyTools",
-        "projectPath": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\MyTools\\MyTools.csproj",
+        "projectPath": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\MyTools\\MyTools.csproj",
         "packagesPath": "C:\\Users\\pablo\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\PROGRAMMING\\Programming-2\\Week-5\\MyTools\\obj\\",
+        "outputPath": "C:\\Users\\pablo\\Documents\\Programming 2\\Week-5\\MyTools\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -112,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

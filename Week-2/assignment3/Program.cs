@@ -94,7 +94,7 @@ namespace assignment3
                         Console.ForegroundColor = ConsoleColor.DarkMagenta;;
                     }
                     Console.Write(String.Format("#", playingField[row, col]) + " ");
-                    Console.ResetColor();
+                        
                 }
             }
             Console.Write("\n");
