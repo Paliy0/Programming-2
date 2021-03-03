@@ -32,6 +32,7 @@ namespace assignment1
                     chessboard[row, col] = null;
                 }
             }
+            PutChessPieces(chessboard);
         }
 
         void DisplayChessboard(ChessPiece[,] chessboard)
@@ -50,11 +51,11 @@ namespace assignment1
 
                     if ((row + col) % 2 == 0)
                     {
-                        Console.BackgroundColor = ConsoleColor.Gray;  
+                        Console.BackgroundColor = ConsoleColor.Gray;
                     }
                     else
                     {
-                        Console.BackgroundColor = ConsoleColor.Yellow;
+                        Console.BackgroundColor = ConsoleColor.DarkYellow;
                     }
                     DisplayChessPiece(chessboard[row, col]);
                     Console.ResetColor();
@@ -126,9 +127,9 @@ namespace assignment1
             position.fieldColumn = column;
             position.fieldRow = row;
 
-            if (column * row > 49)
+            if (row < 0 || column > 7)
             {
-                
+                throw new Exception($"Invalid position: {pos}");
             }
             return position;
 
@@ -136,8 +137,7 @@ namespace assignment1
 
         void PlayChess(ChessPiece[,] chessboard)
         {
-            Console.WriteLine();
-            Console.WriteLine("Enter move (e.g. a2 a3): ");
+            Console.WriteLine("\n" + "Enter move (e.g. a2 a3): ");
             string move = Console.ReadLine();
 
             string fPos;
@@ -150,13 +150,14 @@ namespace assignment1
                     fPos = move.Split(' ')[0];
                     lPos = move.Split(' ')[1];
 
-                    Position fieldRow = String2Position(fPos);
-                    Position fieldColumn = String2Position(lPos);
+                    Position initial = String2Position(fPos);
+                    Position final = String2Position(lPos);
 
-                    Console.WriteLine("move from {0} to {1}", fPos, lPos);
+                    Console.WriteLine("\n" + "move from {0} to {1}", fPos, lPos);
+                    DoMove(chessboard, initial, final);
 
-                    Console.WriteLine("Enter move (e.g. a2 a3): ");
-                    move = Console.ReadLine();
+                    DisplayChessboard(chessboard);
+
                 }
                 catch(Exception e)
                 {
@@ -164,20 +165,80 @@ namespace assignment1
                     Console.WriteLine("Exception occurred: {0}", e.Message);
                     Console.ResetColor();
                 }
+                Console.WriteLine("\n" + "Enter move (e.g. a2 a3): ");
+                move = Console.ReadLine();
             }
         }
 
         void DoMove(ChessPiece[,] chessboard, Position from, Position to)
         {
+            CheckMove(chessboard, from, to);
+
             chessboard[to.fieldRow, to.fieldColumn] = chessboard[from.fieldRow, from.fieldColumn];
             chessboard[from.fieldRow, from.fieldColumn] = null;
         }
 
         void CheckMove(ChessPiece[,] chessboard, Position from, Position to)
         {
-            if (chessboard[from.fieldRow, from.fieldColumn] != null)
+            int hor = Math.Abs(to.fieldColumn - from.fieldColumn);
+            int ver = Math.Abs(to.fieldRow - from.fieldRow);
+
+            string chesspiece = (chessboard[from.fieldRow, from.fieldColumn].type).ToString();
+
+            if (chessboard[from.fieldRow, from.fieldColumn] == null)
             {
                 throw new Exception("No chess piece at from-position");
+            }
+            if (hor == 0 && ver == 0)
+            {
+                throw new Exception("No movement");
+            }
+            if ((chessboard[to.fieldRow, to.fieldColumn] != null) && (chessboard[from.fieldRow, from.fieldColumn].color == chessboard[to.fieldRow, to.fieldColumn].color))
+            {
+                throw new Exception("Can not take a chess piece of same color");
+            }
+            switch (chessboard[from.fieldRow, from.fieldColumn].type)
+            {
+                case ChessPieceType.Pawn:
+                    if(hor != 0 && ver != 1)
+                    {
+                        throw new Exception("Invalid move for chess piece " + chesspiece);
+                    }
+                    break;
+                case ChessPieceType.Rook:
+                    if (hor * ver != 0)
+                    {
+                        throw new Exception("Invalid move for chess piece " + chesspiece);
+                    }
+                    break;
+
+                case ChessPieceType.Knight:
+                    if (hor * ver != 2)
+                    {
+                        throw new Exception("Invalid move for chess piece " + chesspiece);
+                    }
+                    break;
+
+                case ChessPieceType.Bishop:
+                    if (hor != ver)
+                    {
+                        throw new Exception("Invalid move for chess piece " + chesspiece);
+                    }
+                    break;
+
+                case ChessPieceType.King:
+                    if (ver != 1 && hor != 1 | ver != 1 || hor != 1)
+                    {
+                        throw new Exception("Invalid move for chess piece " + chesspiece);
+                    }
+                    break;
+
+                case ChessPieceType.Queen:
+                    if (hor * ver != 0 || hor != ver)
+                    {
+                        throw new Exception("Invalid move for chess piece " + chesspiece);
+                    }
+                    break;
             }
         }
     }

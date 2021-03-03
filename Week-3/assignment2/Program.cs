@@ -28,6 +28,7 @@ namespace assignment2
             }
             else
             {
+                Console.WriteLine(hangman.guessedWord);
                 Console.WriteLine("Too bad, you did not guess the word ({0})", hangman.secretWord);
             }
         }

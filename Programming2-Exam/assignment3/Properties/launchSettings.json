@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "assignment3": {
+      "commandName": "Project",
+      "commandLineArgs": "2020-electors.csv, 2020-votes.csv"
+    }
+  }
+}

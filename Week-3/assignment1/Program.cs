@@ -9,9 +9,19 @@ namespace assignment1
         {
             public string name;
             public int grade;
-            public int practical;
-            public bool Passed;
-            public bool CumLaude;
+            public PracticalGrade practical;
+
+            public bool Passed()
+            {
+                if (grade >= 55 && (practical == PracticalGrade.Good || practical == PracticalGrade.Sufficient)) return true;
+                return false;
+            }
+
+            public bool CumLaude()
+            {
+                if (practical == PracticalGrade.Good && grade >= 80) return true;
+                return false;
+            }
         }
 
         public enum PracticalGrade { None, Absent, Insufficient, Sufficient, Good }
@@ -24,38 +34,33 @@ namespace assignment1
 
         void Start()
         {
-            List<Course> gradeList = new List<Course>();
+            int nrOfCourses = 3;
 
-            for (int i = 0; i < 3; i++)
-            {
-                ReadCourse("Enter a course.");
-                gradeList.Add(new Course());
-            }
+            List<Course> gradeList = ReadGradeList(nrOfCourses);
+
             DisplayGradeList(gradeList);
-
-            
-
-
         }
 
-        int ReadInt(string question)
+        Course ReadCourse(string question)
         {
-            Console.Write(question);
+            Console.WriteLine(question);
+            Course course1 = new Course();
 
-            return int.Parse(question);
+            course1.name = ReadString("Name of the course: ");
+
+            course1.grade = ReadInt($"Grade for {course1.name}: ");
+
+            Console.WriteLine("0. None 1. Absent 2. Insufficient 3. Sufficient 4. Good");
+             course1.practical = ReadPracticalGrade($"Practical grade for {course1.name}: ");
+
+            return course1;
         }
 
-        string ReadString(string question)
+        void DisplayCourse(Course course)
         {
-            Console.Write(question);
-
-            return question;
-        }
-
-        void DisplayGradeList(List<Course> gradeList)
-        {
-            
-        }
+            Console.Write($"{course.name} : {course.grade} ");
+            DisplayPracticalGrade(course.practical);
+        }   
 
         PracticalGrade ReadPracticalGrade(string question)
         {
@@ -83,27 +88,67 @@ namespace assignment1
 
         void DisplayPracticalGrade(PracticalGrade practical)
         {
-            Console.WriteLine("Practical Grade for {0}", practical);
+            Console.WriteLine(practical);
         }
 
-        Course ReadCourse(string question)
+        List<Course> ReadGradeList(int nrOfCourses)
         {
-            Console.WriteLine(question);
-            Course course1 = new Course();
-
-            course1.name = ReadString("Name of the course: ");
-
-            course1.grade = ReadInt($"Grade for {course1.name}");
-
-            Console.WriteLine("0. None 1. Absent 2. Insufficient 3. Sufficient 4. Good");
-            ReadPracticalGrade($"Practical grade for {course1.name}");
-
-            return course1;
+            List<Course> gradeList = new List<Course>();
+            for (int i = 0; i < nrOfCourses; i++)
+            {
+                gradeList.Add(ReadCourse("Enter a course."));
+                Console.WriteLine();
+            }
+            return gradeList;
         }
 
-        void DisplayCourse(Course course)
+        void DisplayGradeList(List<Course> gradeList)
         {
+            int NrOfRetakes = 0;
+            bool cumLaude = false;
 
+            for (int i = 0; i < gradeList.Count; i++)
+            {
+                DisplayCourse(gradeList[i]);
+
+                if (!gradeList[i].Passed())
+                {
+                    NrOfRetakes++;
+                }
+                if(gradeList[i].CumLaude())
+                {
+                    cumLaude = true;
+                }
+            }
+            if (NrOfRetakes > 0)
+            {
+                Console.WriteLine($"Too bad, you did not graduate, you got {NrOfRetakes} retakes.");
+            }
+            else if (!cumLaude)
+            {
+                Console.WriteLine($"Congratulations, you graduated!");
+            }
+            else
+            {
+                Console.WriteLine("Congratulations, you graduated Cum Laude!");
+            }
+        }
+
+        int ReadInt(string question)
+        {
+            Console.Write(question);
+
+            string input = Console.ReadLine();
+            int grade = int.Parse(input);
+            return grade;
+        }
+
+        string ReadString(string question)
+        {
+            Console.Write(question);
+            string input = Console.ReadLine();
+            string name = input;
+            return name;
         }
     }
 }
