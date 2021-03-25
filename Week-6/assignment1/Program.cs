@@ -66,7 +66,6 @@ namespace assignment1
             {
                 Console.Write(String.Format("{0,2}", cols[i]) + " ");
             }
-
         }
 
         void PutChessPieces(ChessPiece[,] chessboard)
@@ -132,7 +131,6 @@ namespace assignment1
                 throw new Exception($"Invalid position: {pos}");
             }
             return position;
-
         }
 
         void PlayChess(ChessPiece[,] chessboard)
@@ -183,12 +181,11 @@ namespace assignment1
             int hor = Math.Abs(to.fieldColumn - from.fieldColumn);
             int ver = Math.Abs(to.fieldRow - from.fieldRow);
 
-            string chesspiece = (chessboard[from.fieldRow, from.fieldColumn].type).ToString();
-
             if (chessboard[from.fieldRow, from.fieldColumn] == null)
             {
                 throw new Exception("No chess piece at from-position");
             }
+            
             if (hor == 0 && ver == 0)
             {
                 throw new Exception("No movement");
@@ -197,6 +194,9 @@ namespace assignment1
             {
                 throw new Exception("Can not take a chess piece of same color");
             }
+
+            string chesspiece = (chessboard[from.fieldRow, from.fieldColumn].type).ToString();
+
             switch (chessboard[from.fieldRow, from.fieldColumn].type)
             {
                 case ChessPieceType.Pawn:

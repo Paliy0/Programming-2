@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Practice Exam",
     "\\Week-1",
-    "\\Week-1\\assignment1",
-    "\\Week-1\\assignment2",
     "\\Week-1\\assignment3",
-    "\\Week-4",
     "\\Week-5",
+    "\\Week-5\\assignment1",
+    "\\Week-5\\assignment2",
+    "\\Week-5\\assignment3",
+    "\\Week-5\\CandyCrushLogic",
+    "\\Week-5\\MyTools",
     "\\Week-6"
   ],
-  "SelectedNode": "\\Week-1\\Enums.sln",
+  "SelectedNode": "\\Week-5\\Class Libraries.sln",
   "PreviewInSolutionExplorer": false
 }

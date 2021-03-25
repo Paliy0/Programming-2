@@ -23,8 +23,6 @@ namespace assignment2
         {
             HangmanGame hangman = new HangmanGame();
 
-            
-
             hangman.secretWord = SelectWord(ListOfWords(filename));
             //Console.WriteLine(hangman.secretWord);
 

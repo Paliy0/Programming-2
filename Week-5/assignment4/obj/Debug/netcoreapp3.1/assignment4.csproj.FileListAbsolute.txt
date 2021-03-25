@@ -1,0 +1,16 @@
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\bin\Debug\netcoreapp3.1\assignment4.exe
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\bin\Debug\netcoreapp3.1\assignment4.deps.json
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\bin\Debug\netcoreapp3.1\assignment4.runtimeconfig.json
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\bin\Debug\netcoreapp3.1\assignment4.runtimeconfig.dev.json
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\bin\Debug\netcoreapp3.1\assignment4.dll
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\bin\Debug\netcoreapp3.1\assignment4.pdb
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\obj\Debug\netcoreapp3.1\assignment4.csprojAssemblyReference.cache
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\obj\Debug\netcoreapp3.1\assignment4.AssemblyInfoInputs.cache
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\obj\Debug\netcoreapp3.1\assignment4.AssemblyInfo.cs
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\obj\Debug\netcoreapp3.1\assignment4.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\obj\Debug\netcoreapp3.1\assignment4.dll
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\obj\Debug\netcoreapp3.1\assignment4.pdb
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\obj\Debug\netcoreapp3.1\assignment4.genruntimeconfig.cache
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\bin\Debug\netcoreapp3.1\MyTools.dll
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\bin\Debug\netcoreapp3.1\MyTools.pdb
+C:\Users\pablo\Documents\Programming 2\Week-5\assignment4\obj\Debug\netcoreapp3.1\assignment4.csproj.CopyComplete

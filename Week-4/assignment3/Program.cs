@@ -18,6 +18,7 @@ namespace assignment1
             Program myProgram = new Program();
             myProgram.Start(filename);
         }
+
         void Start(string filename)
         {
             Console.Write("Enter a word (to search): ");
@@ -62,7 +63,7 @@ namespace assignment1
 
         void DisplayWordInLine(string line, string word)
         {
-            int index = line.ToLower().IndexOf(word);
+            int index = line.ToLower().IndexOf(word.ToLower());
 
             Console.Write(line.Substring(0, index));
 
