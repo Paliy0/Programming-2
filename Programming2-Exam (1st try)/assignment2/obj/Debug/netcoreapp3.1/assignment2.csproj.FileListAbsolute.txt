@@ -1,0 +1,26 @@
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\obj\Debug\netcoreapp3.1\assignment2.AssemblyInfoInputs.cache
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\obj\Debug\netcoreapp3.1\assignment2.AssemblyInfo.cs
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\obj\Debug\netcoreapp3.1\assignment2.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\bin\Debug\netcoreapp3.1\assignment2.exe
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\bin\Debug\netcoreapp3.1\assignment2.deps.json
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\bin\Debug\netcoreapp3.1\assignment2.runtimeconfig.json
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\bin\Debug\netcoreapp3.1\assignment2.runtimeconfig.dev.json
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\bin\Debug\netcoreapp3.1\assignment2.dll
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\bin\Debug\netcoreapp3.1\assignment2.pdb
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\obj\Debug\netcoreapp3.1\assignment2.dll
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\obj\Debug\netcoreapp3.1\assignment2.pdb
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\obj\Debug\netcoreapp3.1\assignment2.genruntimeconfig.cache
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam\assignment2\obj\Debug\netcoreapp3.1\assignment2.csprojAssemblyReference.cache
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\bin\Debug\netcoreapp3.1\assignment2.exe
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\bin\Debug\netcoreapp3.1\assignment2.deps.json
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\bin\Debug\netcoreapp3.1\assignment2.runtimeconfig.json
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\bin\Debug\netcoreapp3.1\assignment2.runtimeconfig.dev.json
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\bin\Debug\netcoreapp3.1\assignment2.dll
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\bin\Debug\netcoreapp3.1\assignment2.pdb
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\obj\Debug\netcoreapp3.1\assignment2.csprojAssemblyReference.cache
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\obj\Debug\netcoreapp3.1\assignment2.AssemblyInfoInputs.cache
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\obj\Debug\netcoreapp3.1\assignment2.AssemblyInfo.cs
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\obj\Debug\netcoreapp3.1\assignment2.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\obj\Debug\netcoreapp3.1\assignment2.dll
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\obj\Debug\netcoreapp3.1\assignment2.pdb
+C:\Users\pablo\Documents\Programming 2\Programming2-Exam (1st try)\assignment2\obj\Debug\netcoreapp3.1\assignment2.genruntimeconfig.cache
